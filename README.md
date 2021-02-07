@@ -50,7 +50,7 @@ EVERYTHING SHOULD WORK!! FRONT+BACK RUNNING WITH ONE COMMAND
 
 BACKEND
 1. cd backend
-2. create folders (config, models, routes, data)
+2. create folders (config, models, data)
 3. in config folder create db.js (fill it up!!!!)
 4. in index.js copy paste (require('./config/db'))
 

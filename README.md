@@ -101,3 +101,46 @@ FRONTEND
 8. in App create Switch and inside put Route with exact path which renders Home and sends state to it
 
 EVERYTHING SHOULD WORK!! YOUR WEBSITE WORKS
+
+
+w3d7 - 2:35min
+
+Heroku
+1. dashboard.herokuapp.com
+2. a) new b) create new app c) name d) region e) create app
+
+FRONTEND
+3. cd frontend
+4. npm run build (create build folder in frontend)
+
+HEROKU
+6. settings - reveal config vars
+a) key: MONGO_URI
+b) value: copy paste from .env
+c) press add
+
+BACKEND
+7. global npm i path
+8. in backend index.js import path and add: (app.use(express.static(path.join(__dirname, 'public')));)
+9. in backend create folder public
+
+FRONTEND
+10. go to clientSide frontend-build and copy paste everything from there to BACKEND-public folder 
+
+BACKEND
+11. in global
+12. heroku login
+13. press any key to open in browser (it opens heroku-login in browser)
+
+HEROKU-LOGIN
+14. press log in
+
+HEROKU
+15. go to deploy and scrole down and copy paste (heroku git:remote -a <name>)
+
+BACKEND
+16. in global
+17. heroku git:remote -a <name>
+18. git add .
+19. git commit -m ""
+20. git push heroku master

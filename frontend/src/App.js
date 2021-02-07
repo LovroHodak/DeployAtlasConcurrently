@@ -15,6 +15,9 @@ function App() {
       console.log(response.data)
       setItems(response.data)
     })
+    .catch((err) => {
+      console.log('this is error: ', err)
+    })
   }, [])
 
   return (

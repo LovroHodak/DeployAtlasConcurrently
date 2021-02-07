@@ -3,13 +3,14 @@ import React, { useState, useEffect } from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
 import axios from "axios";
 import Home from './components/Home';
+import {API_URL} from './config'
 
 function App() {
 
   const [items, setItems] = useState([])
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/products", { withCredentials: true })
+    axios.get(`${API_URL}/products`, { withCredentials: true })
     .then((response) => {
       console.log(response.data)
       setItems(response.data)

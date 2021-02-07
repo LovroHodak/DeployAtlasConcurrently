@@ -143,4 +143,16 @@ BACKEND
 17. heroku git:remote -a <name>
 18. git add .
 19. git commit -m ""
-20. git push heroku master
+20. git push heroku main
+21. when it finishes you will get 
+(remote:        https://<name>.herokuapp.com/ deployed to Heroku)
+
+EVERYTHING SHOULD WORK!! YOU HAVE DEPLOYED IT AND IT WORKS BUT IT IS NOT YET FETCHING DATA FROM DATABASE
+
+FRONTEND
+1. in src create new file config.js
+2. inside create (export const API_URL = 'https://<name>.herokuapp.com/api')
+
+3. in App.js (import {API_URL} from './config')
+4. in all axios requests change quotes to backticks and url with API_URL
+5. axios.get(`${API_URL}/products`, { withCredentials: true })

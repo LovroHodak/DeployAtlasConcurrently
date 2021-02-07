@@ -156,3 +156,17 @@ FRONTEND
 3. in App.js (import {API_URL} from './config')
 4. in all axios requests change quotes to backticks and url with API_URL
 5. axios.get(`${API_URL}/products`, { withCredentials: true })
+
+6. in frontend i deleted build
+7. cd frontend
+8. npm run build
+9. go to clientSide frontend-build and copy paste (and replace) everything from there to BACKEND-public folder
+10. cd .. (in global)
+11. heroku git:remote -a <name>
+12. git add .
+13. git commit -m ""
+14. git push heroku main
+
+
+EVERYTHING SHOULD WORK!! FINISH!!!
+link: https://atlasanddeploy.herokuapp.com/

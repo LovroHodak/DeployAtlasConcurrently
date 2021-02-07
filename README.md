@@ -79,3 +79,25 @@ BACKEND
 5. npm run data:import (go to ATLAS - clusters - your cluster - collections)
 
 EVERYTHING SHOULD WORK!! YOUR ITEMS SHOULD BE IN ATLAS
+
+
+
+BACKEND
+1. folder routes inside file products.routes.js (fill it up!!!!)
+
+2. go to index.js 
+a) npm i body-parser cors
+b) add cors and body parser
+c) add routes
+
+FRONTEND
+1. clean src (delete: setupTests, reportWebVitals, App.test.js, logo, )
+2. cd frontend
+3. npm i react-router-dom axios
+4. go to index.js and import {browserRouter}
+5. go to App.js and import {useState, useEffect} {Switch, Route, withRouter} and axios (export default withRouter(App))
+6. useEffect - with axios fetch data and setState to response.data
+7. create components folder and inside Home component
+8. in App create Switch and inside put Route with exact path which renders Home and sends state to it
+
+EVERYTHING SHOULD WORK!! YOUR WEBSITE WORKS
